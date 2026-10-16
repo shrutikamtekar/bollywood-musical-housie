@@ -2,10 +2,6 @@
 
 A local, browser-based Bollywood music guessing game inspired by Housie/Tambola, built for a Diwali party.
 
-## Actual V22 game screenshots
-
-These are **captures of the real V22 application running locally**, using demonstration player/game data where needed. They replace the earlier illustrative mockups. Screen contents may differ depending on game state and browser size.
-
 ### TV welcome lobby
 
 ![Actual V22 TV welcome lobby](docs/actual-screens/01-tv-welcome.svg)
