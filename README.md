@@ -2,37 +2,33 @@
 
 A local, browser-based Bollywood music guessing game inspired by Housie/Tambola, built for a Diwali party.
 
-## UI mockups
+## Actual V22 game screenshots
 
-The following **illustrative design mockups** are embedded directly in this README. They are not screenshots of a running game.
+These are **captures of the real V22 application running locally**, using demonstration player/game data where needed. They replace the earlier illustrative mockups. Screen contents may differ depending on game state and browser size.
 
-### Welcome lobby
+### TV welcome lobby
 
-![Welcome lobby](docs/mockups/01-welcome-lobby.svg)
+![Actual V22 TV welcome lobby](docs/actual-screens/01-tv-welcome.svg)
 
-### Host dashboard
+### Host dashboard and game setup
 
-![Host dashboard](docs/mockups/02-host-dashboard.svg)
+![Actual V22 Host dashboard and game setup](docs/actual-screens/02-host-dashboard.svg)
+
+### Guest registration
+
+![Actual V22 Guest registration](docs/actual-screens/03-guest-registration.svg)
+
+### Guest ticket with prize availability
+
+![Actual V22 Guest ticket with prize availability](docs/actual-screens/04-guest-ticket.svg)
 
 ### TV countdown and live scoreboard
 
-![TV countdown and live scoreboard](docs/mockups/03-tv-live-game.svg)
+![Actual V22 TV countdown and live scoreboard](docs/actual-screens/05-tv-countdown-scoreboard.svg)
 
-### Guest ticket
+### TV played-song history
 
-![Guest ticket](docs/mockups/04-guest-ticket.svg)
-
-### Prize management
-
-![Prize management](docs/mockups/05-prize-management.svg)
-
-### Played songs history
-
-![Played songs history](docs/mockups/06-played-songs.svg)
-
-### How the game works
-
-![How the game works](docs/mockups/07-game-flow.svg)
+![Actual V22 TV played-song history](docs/actual-screens/06-tv-played-songs.svg)
 
 ## Features
 
