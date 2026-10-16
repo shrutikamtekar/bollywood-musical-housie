@@ -4,20 +4,35 @@ A local, browser-based Bollywood music guessing game inspired by Housie/Tambola,
 
 ## UI mockups
 
-Explore the different screens and gameplay flows below. These are **illustrative design mockups**, not screenshots from a live session.
+The following **illustrative design mockups** are embedded directly in this README. They are not screenshots of a running game.
 
-| Screen | Preview |
-| --- | --- |
-| Welcome lobby and guest QR join | [View mockup](docs/mockups/01-welcome-lobby.svg) |
-| Host dashboard and game setup | [View mockup](docs/mockups/02-host-dashboard.svg) |
-| TV countdown alongside live scoreboard | [View mockup](docs/mockups/03-tv-live-game.svg) |
-| Guest ticket and prize availability | [View mockup](docs/mockups/04-guest-ticket.svg) |
-| Prize claims and host approval | [View mockup](docs/mockups/05-prize-management.svg) |
-| Played songs history | [View mockup](docs/mockups/06-played-songs.svg) |
-| How the game works | [View mockup](docs/mockups/07-game-flow.svg) |
+### Welcome lobby
 
-![TV countdown and live scoreboard mockup](docs/mockups/03-tv-live-game.svg)
+![Welcome lobby](docs/mockups/01-welcome-lobby.svg)
 
+### Host dashboard
+
+![Host dashboard](docs/mockups/02-host-dashboard.svg)
+
+### TV countdown and live scoreboard
+
+![TV countdown and live scoreboard](docs/mockups/03-tv-live-game.svg)
+
+### Guest ticket
+
+![Guest ticket](docs/mockups/04-guest-ticket.svg)
+
+### Prize management
+
+![Prize management](docs/mockups/05-prize-management.svg)
+
+### Played songs history
+
+![Played songs history](docs/mockups/06-played-songs.svg)
+
+### How the game works
+
+![How the game works](docs/mockups/07-game-flow.svg)
 
 ## Features
 
