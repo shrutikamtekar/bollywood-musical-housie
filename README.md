@@ -1,6 +1,6 @@
 # Bollywood Musical Housie 🎶
 
-A local, browser-based Bollywood music guessing game inspired by Housie/Tambola, built for a Diwali party. **Version 22.**
+A local, browser-based Bollywood music guessing game inspired by Housie/Tambola, built for a Diwali party.
 
 ## Features
 
