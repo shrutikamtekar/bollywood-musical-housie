@@ -1,0 +1,39 @@
+:root{font-family:ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif;color:#4b2542;background:#fff8ec}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 95% 4%,#ffe5a2,transparent 30%),radial-gradient(circle at 0 90%,#ffdbed,transparent 35%),#fff8ec}header{background:linear-gradient(110deg,#ff6b51,#fda12f,#f3c14d);padding:18px 22px;color:white;box-shadow:0 5px 18px #cc783d38}h1{margin:0;font-size:clamp(24px,3vw,38px)}h2{margin:0 0 14px;font-size:23px}h3{margin:14px 0 8px}.sub{opacity:.86}.wrap{max-width:1180px;margin:20px auto;padding:0 15px}.card{background:#ffffffeb;border:1px solid #f9d4b6;border-radius:22px;box-shadow:0 8px 25px #b7685030;padding:20px;margin:14px 0}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.space{justify-content:space-between}button{cursor:pointer;border:0;background:#ee5877;color:white;border-radius:12px;padding:12px 17px;font-weight:750;font-size:15px}button:hover{filter:brightness(.96)}button:disabled{opacity:.4;cursor:not-allowed}.gold{background:#f49b23}.teal{background:#128e8e}.dark{background:#6b3a69}.light{background:#fff0d8;color:#6b3a69}.red{background:#d64555}input,select{border:2px solid #f2c8ac;border-radius:11px;padding:11px;font-size:16px;background:white;max-width:100%;color:#4b2542}label{display:block;font-size:13px;font-weight:750;margin:8px 0 4px}.muted{color:#89687d}.big{font-size:32px;font-weight:850}.hide{display:none!important}.notice{background:#fff2c7;padding:10px;border-radius:10px}.error{color:#b82045;font-weight:750}.good{color:#12805d}.ticket{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:4px;background:#f8c986;border:5px solid #f8c986;border-radius:13px;overflow:hidden}.cell{height:clamp(58px,11vw,100px);border-radius:5px;display:flex;align-items:center;justify-content:center;text-align:center;padding:3px;font-size:clamp(9px,1.7vw,14px);line-height:1.15;overflow-wrap:anywhere;background:white;color:#633f57;font-weight:700}.cell.empty{background:#ffeed3}.cell.locked{opacity:.62}.cell.marked{background:#30b99d;color:white}.cell.marked:after{content:'✓';font-size:19px;position:absolute;opacity:.75}.cell{position:relative}.pill{display:inline-block;border-radius:30px;background:#fff1d9;padding:6px 12px;margin:3px;font-weight:750}.list{display:flex;flex-direction:column;gap:7px}.listitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px;border:1px solid #f4d8be;border-radius:12px}.tv{display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}.tv .card{width:min(92vw,1000px);padding:clamp(30px,5vw,75px)}.tv h1{font-size:clamp(36px,6vw,82px);color:#de4970}.tv .timer{font-size:clamp(120px,24vw,310px);font-weight:900;line-height:1;color:#f07b37}.tv .title{font-size:clamp(40px,7vw,105px);font-weight:900;color:#d44b79}.tv .qr{width:min(36vw,360px);height:min(36vw,360px);background:white;padding:12px;border-radius:16px}.tv .listitem{font-size:clamp(24px,3vw,44px);padding:20px}.small{font-size:13px}@media(max-width:600px){.wrap{padding:0 8px}.card{padding:13px;border-radius:15px}.ticket{gap:2px;border-width:3px}.cell{height:70px;font-size:9px}header{padding:16px}button{padding:11px}.grid2{grid-template-columns:1fr}}
+
+/* TV welcome screen: two QR codes side by side */
+.tv .tv-qr-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(14px,3vw,38px);align-items:start;margin:22px auto 14px;max-width:850px}
+.tv .tv-qr-panel{min-width:0;padding:14px 10px;border:1px solid #f5d6bd;border-radius:20px;background:#fff9f1}
+.tv .tv-qr-panel h2{font-size:clamp(18px,2.4vw,28px);margin:0 0 12px}
+.tv .tv-qr-panel .qr{width:min(27vw,290px);height:min(27vw,290px);max-width:100%;object-fit:contain;padding:9px}
+.tv .tv-qr-note{font-weight:800;font-size:clamp(14px,1.7vw,21px);margin:9px 0 4px}
+.tv .tv-qr-link{font-size:clamp(10px,1.2vw,15px);overflow-wrap:anywhere;margin:5px}
+@media(max-width:600px){.tv .tv-qr-row{gap:8px}.tv .tv-qr-panel{padding:10px 4px}.tv .tv-qr-panel .qr{width:38vw;height:38vw;padding:4px}}
+
+/* V18: Guest prize availability as a clear, vertical list. */
+.prize-section{margin:18px 0 8px}
+.prize-section h3{margin:0 0 10px;font-size:17px}
+.prize-list{display:flex;flex-direction:column;gap:8px}
+.prize-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:12px;border:1px solid #c9dccc;background:#effaf1}
+.prize-name{font-size:14px;font-weight:750;min-width:0}
+.prize-status{font-size:12px;font-weight:800;white-space:nowrap;color:#176a36}
+.prize-item.taken{background:#f4f0ed;border-color:#ddd4ce;color:#766a65}
+.prize-item.taken .prize-status{color:#766a65}
+@media(max-width:400px){.prize-item{padding:10px}.prize-name{font-size:13px}}
+
+/* V21: show live scoreboard and song countdown together */
+.tv .card:has(.tv-combined){width:min(96vw,1350px);padding:clamp(16px,3vw,42px)}
+.tv-combined{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(14px,3vw,44px);align-items:center;text-align:center}
+.tv-combined .tv-clock-panel h1{font-size:clamp(27px,4vw,60px)}
+.tv-combined .timer{font-size:clamp(90px,17vw,225px)}
+.tv-combined .tv-rank-panel h2{font-size:clamp(24px,3.2vw,45px);color:#de4970}
+.tv-combined .listitem{font-size:clamp(18px,2.4vw,32px);padding:clamp(9px,1.4vw,20px)}
+.tv-combined .tv-waiting{font-size:clamp(28px,5vw,64px);font-weight:800;color:#f07b37}
+@media(max-width:720px){.tv-combined{grid-template-columns:1fr;gap:12px}.tv-combined .timer{font-size:clamp(75px,19vw,140px)}.tv-combined .listitem{font-size:18px;padding:9px}.tv-combined .tv-rank-panel h2{font-size:24px}}
+
+/* V22: countdown and leaderboard always occupy separate, visible TV columns. */
+.tv .card:has(.tv-combined){width:min(98vw,1500px);max-width:none;padding:clamp(16px,2.5vw,40px)}
+.tv-combined{display:grid!important;grid-template-columns:minmax(250px,1fr) minmax(320px,1fr)!important;align-items:center;gap:clamp(14px,3vw,42px)}
+.tv-combined .tv-clock-panel{display:flex!important;flex-direction:column;align-items:center;justify-content:center;min-width:0;min-height:230px}
+.tv-combined .tv-clock-panel .timer{display:block!important;font-size:clamp(82px,13vw,210px)!important;line-height:1.1}
+.tv-combined .tv-rank-panel{min-width:0}
+@media(max-width:650px){.tv-combined{grid-template-columns:1fr!important}.tv-combined .tv-clock-panel{min-height:150px}.tv-combined .tv-clock-panel .timer{font-size:100px!important}}
