@@ -2,6 +2,23 @@
 
 A local, browser-based Bollywood music guessing game inspired by Housie/Tambola, built for a Diwali party.
 
+## UI mockups
+
+Explore the different screens and gameplay flows below. These are **illustrative design mockups**, not screenshots from a live session.
+
+| Screen | Preview |
+| --- | --- |
+| Welcome lobby and guest QR join | [View mockup](docs/mockups/01-welcome-lobby.svg) |
+| Host dashboard and game setup | [View mockup](docs/mockups/02-host-dashboard.svg) |
+| TV countdown alongside live scoreboard | [View mockup](docs/mockups/03-tv-live-game.svg) |
+| Guest ticket and prize availability | [View mockup](docs/mockups/04-guest-ticket.svg) |
+| Prize claims and host approval | [View mockup](docs/mockups/05-prize-management.svg) |
+| Played songs history | [View mockup](docs/mockups/06-played-songs.svg) |
+| How the game works | [View mockup](docs/mockups/07-game-flow.svg) |
+
+![TV countdown and live scoreboard mockup](docs/mockups/03-tv-live-game.svg)
+
+
 ## Features
 
 - Host dashboard with PIN-protected controls
