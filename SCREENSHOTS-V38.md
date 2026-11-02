@@ -1,0 +1,1 @@
+V38 host-supplied screenshots: 02-host-dashboard.png, 07-host-dashboard-lower.png, 05-tv-guess-song.png, 06-tv-scoreboard-played-songs.png, 08-tv-scoreboard.png. Original V22 screenshots are not used in the V38 README.

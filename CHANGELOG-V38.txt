@@ -1,0 +1,3 @@
+V38: Clicking Next Song loads the next song without autoplay and immediately starts a visible 5-second countdown on the host screen. At zero, it says the host may play when ready. The countdown never starts music or blocks manual YouTube playback. All V37 controls retained.
+
+Documentation refresh: updated README with V38 host/TV behavior and screenshot replacement checklist; obsolete V22 screenshots intentionally not represented as V38.

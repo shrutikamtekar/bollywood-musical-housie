@@ -30,10 +30,23 @@
 .tv-combined .tv-waiting{font-size:clamp(28px,5vw,64px);font-weight:800;color:#f07b37}
 @media(max-width:720px){.tv-combined{grid-template-columns:1fr;gap:12px}.tv-combined .timer{font-size:clamp(75px,19vw,140px)}.tv-combined .listitem{font-size:18px;padding:9px}.tv-combined .tv-rank-panel h2{font-size:24px}}
 
-/* V22: countdown and leaderboard always occupy separate, visible TV columns. */
-.tv .card:has(.tv-combined){width:min(98vw,1500px);max-width:none;padding:clamp(16px,2.5vw,40px)}
-.tv-combined{display:grid!important;grid-template-columns:minmax(250px,1fr) minmax(320px,1fr)!important;align-items:center;gap:clamp(14px,3vw,42px)}
-.tv-combined .tv-clock-panel{display:flex!important;flex-direction:column;align-items:center;justify-content:center;min-width:0;min-height:230px}
-.tv-combined .tv-clock-panel .timer{display:block!important;font-size:clamp(82px,13vw,210px)!important;line-height:1.1}
-.tv-combined .tv-rank-panel{min-width:0}
-@media(max-width:650px){.tv-combined{grid-template-columns:1fr!important}.tv-combined .tv-clock-panel{min-height:150px}.tv-combined .tv-clock-panel .timer{font-size:100px!important}}
+/* Ticket text containment: every title stays inside its own cell. */
+.ticket{width:100%;min-width:0;grid-template-columns:repeat(9,minmax(0,1fr));overflow:hidden}
+.ticket .cell{min-width:0;max-width:100%;width:100%;box-sizing:border-box;overflow:hidden;white-space:normal;overflow-wrap:anywhere;word-break:break-word;hyphens:auto;line-height:1.12;padding:3px 2px;font-size:clamp(8px,1.15vw,12px);text-wrap:balance}
+@media(max-width:600px){.ticket .cell{font-size:clamp(7px,1.9vw,9px);padding:2px 1px;line-height:1.08;height:76px}.ticket{gap:2px}}
+@media(max-width:390px){.ticket .cell{font-size:7px;height:80px}}
+
+/* V23: prevent ticket names from spilling beyond their cells */
+.ticket .cell { overflow:hidden; overflow-wrap:anywhere; word-break:break-word; min-width:0; max-width:100%; padding:2px; line-height:1.05; font-size:clamp(7px,1.05vw,11px); }
+@media(max-width:600px){.ticket .cell{font-size:clamp(6px,1.7vw,8px);height:78px;padding:1px}}
+
+/* V36: Center the Guess the Song presentation in the TV viewport. */
+.tv #screen:has(.tv-combined){min-height:min(88vh,900px);display:flex;flex-direction:column;justify-content:center;}
+.tv #screen:has(.tv-combined)>h1{flex:0 0 auto;}
+.tv .tv-combined{width:100%;flex:1;align-items:center;justify-items:center;}
+.tv .tv-combined.solo{grid-template-columns:minmax(0,1fr);}
+.tv .tv-combined .tv-clock-panel{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(12px,2vh,28px);}
+.tv .tv-combined .tv-clock-panel h2{margin:0;font-size:clamp(32px,4.2vw,68px);}
+.tv .tv-combined .tv-clock-panel p{font-size:clamp(20px,2.3vw,36px);margin:0;}
+.tv .tv-combined.solo .tv-clock-panel .timer{font-size:clamp(110px,18vw,235px);}
+@media(max-width:720px){.tv #screen:has(.tv-combined){min-height:85vh}.tv .tv-combined.with-scoreboard{grid-template-columns:1fr}}
